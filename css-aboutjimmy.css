@@ -1,0 +1,13 @@
+#jimmypfplist {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    background-color: #ffffff;
+  
+    overflow: visible;
+    white-space: nowrap;
+  }
+  
+  #jimmypfplist .pfppicture {
+    display: inline-block;
+  }
