@@ -1,0 +1,22 @@
+{
+    "name": "jimmyarchive2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CompNerdx/JimmyArchive2.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CompNerdx/JimmyArchive2/issues"
+    },
+    "homepage": "https://github.com/CompNerdx/JimmyArchive2#readme",
+    "dependencies": {
+        "vite": "^2.5.0"
+    }
+}
