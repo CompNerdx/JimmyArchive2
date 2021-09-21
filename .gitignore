@@ -1,7 +1,10 @@
 /node_modules
 
-# testing
 # misc
+.node_modules
+.vscode
+.package.json
+.package-lock.json
 .DS_Store
 .env.local
 .env.development.local
