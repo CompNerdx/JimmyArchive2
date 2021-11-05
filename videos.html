@@ -24,6 +24,14 @@
     <meta property="og:description" content="A whole new Jimmy stalking experience.">
     <meta property="og:image" content="/jimmy.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Video player -->
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet" />
+
     <!-- CSS Styles -->
     <link href="/build/styles.css" rel="stylesheet">
     <link rel='stylesheet' href='/css/videos.css'>
@@ -64,6 +72,13 @@
                         <source src="https://cdn.jimmyarchive.tk/Question_Mark.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <!-- Experimental Video Player https://videojs.com/ -->
+                    <video id="my-video" class="m-3 video-js vjs-theme-forest" controls preload="auto" width="320" height="190" poster="/images/thumbs/Jimmy's Drone's Presumed Death.png" data-setup="{}">
+                        <source src="https://cdn.jimmyarchive.tk/Jimmys_Drones_Presumed_Death.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            Your browser does not support JavaSript.
+                        </p>
+                    </video>
                 </div>
             </div>
             <div class="m-3 bg-gray-100 p-3 rounded-md">
@@ -71,6 +86,8 @@
             </div>
         </div>
     </div>
+    <!-- More video player stuff-->
+    <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
 </body>
 
 </html>
