@@ -15,7 +15,7 @@
 <head>
     <!-- Basics -->
     <meta charset="UTF-8" />
-    <title>Videos - Jimmy Archive 2.0</title>
+    <title>404 - Jimmy Archive 2.0</title>
     <!-- I forgot where this tag came from or what it does but I don't want to get rid of it-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta property="og:title" content="Jimmy Archive 2.0">
@@ -24,17 +24,8 @@
     <meta property="og:description" content="A whole new Jimmy stalking experience.">
     <meta property="og:image" content="/jimmy.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Video player -->
-    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
-    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
-    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
-    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet" />
-    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet" />
-    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet" />
-
-    <!-- CSS Styles -->
+    <!-- Tailwind CSS -->
     <link href="/build/styles.css" rel="stylesheet">
-    <link rel='stylesheet' href='/css/videos.css'>
 </head>
 
 <body class="bg-gray-200">
@@ -48,7 +39,7 @@
                     <a href="home.html" class="text-gray-600 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
                         Home
                     </a>
-                    <a href="videos.html" class="text-gray-600 font-semibold border-indigo-500 border-b-2 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
+                    <a href="videos.html" class="text-gray-600 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
                         Videos
                     </a>
                     <a href="aboutjimmy.html" class="text-gray-600 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
@@ -59,33 +50,10 @@
             </div>
         </div>
     </nav>
-    <div class="flex flex-wrap">
-        <div class="flex flex-row mx-auto">
-            <div class="bg-gray-100 rounded-md m-3">
-                <h1 class="font-bold p-3 m-3 text-gray-700 text-2xl">Featured Videos</h1>
-                <div class="flex flex-row flex-wrap px-6 pb-6">
-                    <video class="m-3" width="320" height="240" controls>
-                        <source src="https://cdn.jimmyarchive.tk/Test.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <video class="m-3 bg-black" width="320" height="240" controls>
-                        <source src="https://cdn.jimmyarchive.tk/Question_Mark.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <!-- Experimental Video Player https://videojs.com/ -->
-                    <video id="my-video" class="m-3 video-js vjs-theme-forest" controls preload="auto" width="320" height="190" poster="/images/thumbs/Jimmy's Drone's Presumed Death.png" data-setup="{}">
-                        <source src="https://cdn.jimmyarchive.tk/Jimmys_Drones_Presumed_Death.mp4" type="video/mp4" />
-                        <p class="vjs-no-js">Your browser does not support JavaSript.</p>
-                    </video>
-                </div>
-            </div>
-            <div class="m-3 bg-gray-100 p-3 rounded-md">
-                <a href=""><img class="object-contain w-auto" title="yay pen!!!!!!" src="images/sussy/pen.png"></a>
-            </div>
-        </div>
+    <div class="mx-auto">
+        <h1 class="text-center font-semibold text-2xl m-2">Sorry, we couldn't find this one.</h1>
+        <img class="mx-auto p-3 rounded-3xl" src="https://http.cat/404">
     </div>
-    <!-- More video player stuff-->
-    <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
 </body>
 
 </html>
