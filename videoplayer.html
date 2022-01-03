@@ -15,8 +15,7 @@
 <head>
     <!-- Basics -->
     <meta charset="UTF-8" />
-    <title>Home - Jimmy Archive 2.0</title>
-    <!-- I forgot where this tag came from or what it does but I don't want to get rid of it-->
+    <title>Watch Video - Jimmy Archive 2.0</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta property="og:title" content="Jimmy Archive 2.0">
     <meta property="theme-color" content="#c26033">
@@ -24,8 +23,15 @@
     <meta property="og:description" content="A whole new Jimmy stalking experience.">
     <meta property="og:image" content="/jimmy.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS Styles -->
+    <!-- Tailwind CSS -->
     <link href="/build/styles.css" rel="stylesheet">
+    <!-- Video player -->
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet" />
 </head>
 
 <body class="bg-gray-200">
@@ -36,7 +42,7 @@
             </div>
             <div class="items-center md-flex">
                 <div class="flex flex-col md:flex-row md:mx-6">
-                    <a href="home.html" class="text-gray-600 font-semibold border-indigo-500 border-b-2 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
+                    <a href="home.html" class="text-gray-600 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
                         Home
                     </a>
                     <a href="videos.html" class="text-gray-600 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
@@ -50,42 +56,13 @@
             </div>
         </div>
     </nav>
-    <header>
-        <div class="p-4">
-            <div class="p-10 flex mx-auto rounded-md border-solid border-gray-300 border-4" style="background: linear-gradient(45deg, #849cfd 0%, #d397ea 100%)">
-                <div class="p-3 mx-auto">
-                    <div class="bg-gray-100 rounded">
-                        <h1 class="p-3 font-bold text-gray-600 text-3xl">This is the next generation of Jimmy.</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="border-solid border-2 border-gray-300 mx-3"></div>
-    <div class="p-4 flex">
-        <div class="flex-grow rounded-md bg-gray-100 border-solid border-gray-300 border-4">
-            <h1 class="p-3 mx-4 font-bold text-gray-600 text-2xl border-indigo-500 border-b-2">Archive News</h1>
-            <ul class="p-3 mx-6 my-2 list-disc">
-                <li>
-                    <div>
-                        <h2 class="font-bold text-gray-800">Coming soon??? - 12/16/2021</h2>
-                        <p class="font-normal text-gray-700">We are gonna be making a big changes to the website hopefully maybe soon.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h2 class="font-bold text-gray-800">New News Thing? - 10/15/2021</h2>
-                        <p class="font-normal text-gray-700">Just pushed out this new homepage update! It has this new news thing, as you can see! I will post updates here about the website, and I'm sure 4j0 will do the same - CompNerd
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="flex-initial mx-3">
-            <img class="border-gray-300 border-4 rounded-xl object-contain w-80" src="images/jimmy.png">
-        </div>
+    <div>
+        <video id="my-video" class="m-3 video-js vjs-theme-forest" controls preload="auto" width="800" height="450" poster="/images/thumbs/Jimmy's Drone's Presumed Death.png" data-setup="{}">
+            <source src="https://cdn.jimmyarchive.tk/videos/Futret_Cupcakes_Instrumental/Futret_Cupcakes_Instrumental.mp4" type="video/mp4" />
+            <p class="vjs-no-js">Your browser does not support JavaSript.</p>
+        </video>
     </div>
+    <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
 </body>
 
 </html>
